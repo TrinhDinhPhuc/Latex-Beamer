@@ -1,0 +1,267 @@
+
+%%%%%%Presentation in Beamer %%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%Main file%%%%%%%%%%%%%%%%%%%%%%%%%%%%%$%%
+
+
+\documentclass[12pt]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%% Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usetheme{boxes}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{todonotes}
+\usepackage{lipsum}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{multimedia}
+\usepackage{mathptmx}
+
+
+
+
+\logo{\includegraphics[scale=.05]{transparent.jpg}} 
+%\titlegraphic{\includegraphics[scale=.05]{iitb_logo.pdf}\hspace*{-12cm}} 
+
+
+\begin{document}
+
+%--------------------- Title page ------------------------
+\author[Chandra Has]{\\[5mm]\scriptsize by \\[5mm] \LARGE \color{magenta} Chandra Has}
+\title{Presentation in Beamer}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+%\institute{} 
+\date{\today} 
+%\subject{} 
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%% Document environment %%%%%%%%%%%%%%%%%%%%%%%
+
+\section[Outline]{}
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}{Introduction}
+Your content... \ldots
+\begin{enumerate}
+\item enum1
+\item enum2
+\begin{itemize}\setlength{\itemsep}{1cm}
+\item first item
+\item second item
+\end{itemize}
+\item enum3
+\end{enumerate}
+
+
+\end{frame}
+\begin{frame}{Use Columns}
+\begin{columns}[c]
+\column{2in}
+\begin{enumerate}
+\item Text
+\end{enumerate}
+\column{5in}
+\missingfigure[figwidth=6cm, figheight=6cm]{Figure}
+ \end{columns}
+\end{frame}
+
+
+\begin{frame}{Table and Equation}
+\begin{columns}[c]
+\column{3in}
+\begin{enumerate}
+\item Table \qquad \begin{tabular}{c c c c}
+\hline
+1&2&3&4\\\hline
+4&3&2&1\\\hline
+2&3&4&1\\\hline
+3&4&2&1\\\hline
+\end{tabular}
+\end{enumerate}
+\column{3in}
+\begin{enumerate}
+\item Eqn: \qquad  $\tau \approx \frac{l^2}{2D}$
+\end{enumerate}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{Block}
+\begin{block}{Block title}
+Text will come here....
+\end{block}
+\vfill
+\begin{exampleblock}{Title of example block}
+Text.....
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}[label=mylink]{Hyperlink}
+\hyperlink{chlink}{ \beamergotobutton{Go to slide no. 9}}
+\end{frame}
+
+
+\begin{frame}{Dummy text}
+content.....
+\end{frame}
+
+
+\begin{frame}[label=chlink]{Target link}
+\hyperlink{mylink}{\beamerreturnbutton{Go back}}
+\footnotesize\lipsum[1]
+\end{frame}
+
+
+%\section{Animation}
+%\begin{frame}{Animation}
+%\begin{enumerate}
+%\item <1-> enum1
+%\item <2-> enum2
+%\item <3-> enum3
+%\item <4-> enum4
+%\end{enumerate}
+%\end{frame}
+
+%<n->
+%<1->
+%<2->
+
+
+%\section{Animation}
+%\begin{frame}{Animation}
+%\begin{enumerate}
+%\item <1> enum1s
+%\item <2> enum2
+%\item <3> enum3
+%\item <4> enum4
+%\end{enumerate}
+%\end{frame}
+
+%
+%\section{Animation}
+%\begin{frame}{Animation}
+%\begin{enumerate} [<+->]
+%\item  enum1
+%\item  enum2
+%\item  enum3
+%\item  enum4
+%\end{enumerate}
+%\end{frame}
+
+%\section{Animation}
+%\begin{frame}{Animation}
+%\only<1> {first item}
+%\only<2> {second item}
+%\only<3> {third item}
+%\only<5> {fourth item}
+%\only<4> {fifth item}
+%\end{frame}
+
+%\section{Animation}
+%\begin{frame}{Animation}
+%\begin{enumerate}
+%\item  enum1 \pause
+%\item  enum2\pause
+%\item  enum3\pause
+%\item  enum4\pause
+%\end{enumerate}
+%\end{frame}
+
+%\section{Animation}
+%\begin{frame}{Animation}
+%\begin{enumerate}
+%\item <1-> \alert<1> { enum1}
+%\item <2-> \textbf<2>{enum2}
+%\item <3-> \textsl<3>{ enum3}
+%\item <4-> \color<4>{blue}{enum4}
+%\item <5-> \textrm<5>{ enum5}
+%\end{enumerate}
+%\end{frame}
+
+
+\section{Animation}
+\begin{frame}{Animation}
+\setbeamercovered{transparent}
+\begin{enumerate}
+\item \uncover<1> { enum1}
+\item \uncover<2> {enum2}
+\item \uncover<3> { enum3}
+\item \uncover<4> {enum4}
+\item \uncover<5> { enum5}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Movie}
+\centering
+%{%
+%\movie[showcontrols]{\includegraphics[scale=.3]{play.png}}{an.avi}
+%}
+\href{run:an.avi}{\includegraphics[scale=.1]{play.png}}
+\end{frame}
+
+
+\section{Results and Conclusions}
+\begin{frame}{Results and Conclusions}
+\scriptsize\lipsum[1]
+\end{frame}
+
+
+\section{References}
+\begin{frame}{References}
+
+\begin{thebibliography}{}
+\setbeamertemplate{bibliography item}{\includegraphics[width=1.5em]{transparent}}
+\bibitem{chandra} Has C.,  Create Presentation with Beamer in \LaTeX. \emph{\LaTeX \ tutorial by Chandra Has}, xxxx \ldots xxxx.
+
+\setbeamertemplate{bibliography item}[book]
+\bibitem{drazin} Drazin,P.G., Introduction to hydrodynamic instability. Cambridge university press,(2002).
+
+\setbeamertemplate{bibliography item}[article]
+\bibitem{saffman} Saffman P. G. and Taylor G., The penetration of a fluid into a medium of Hele - Shaw cell containing a more viscous liquid, \emph{Proc. Soc. London,Ser A} (1958)312-329.
+
+\setbeamertemplate{bibliography item}[online]
+\bibitem{online} The Comprehensive TeX Archive Network, \url{http://www.ctan.org/}.
+
+\end{thebibliography}
+\end{frame}
+
+
+\begin{frame}
+\centering
+\includegraphics[scale=.7]{any_questions.png} 
+\end{frame}
+
+\begin{frame}
+\centering
+\includegraphics[scale=.7, angle=30]{thankyoupostit.png} 
+\end{frame}
+
+\end{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+

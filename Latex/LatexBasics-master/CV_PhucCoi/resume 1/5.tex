@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{fontawesome}
+
+\usepackage[scale=.85]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3.3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Trinh} % Your first name
+\familyname{Dinh Phuc} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{16 Kha Van Can Str.}{Linh Dong, Thu Duc, HCMC}
+\mobile{ 0121 658 5084 }
+\email{Phuccoi996@gmail.com}
+\extrainfo{DOB: March 16, 1996}
+
+
+\photo[70pt][0.4pt]{pictures/phuc4} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2014--2018}{Bachelor's Degree of Information Technology}{\textit {Department of Computer Science, Telecommunications University (TCU), Nha Trang, Khanh Hoa, Vietnam}}{}{}{}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistitem{CGPA: 3.35/4 via 204 credits.}{}
+\cvlistitem{Thesis:\hspace{1mm}\textit{Pneumonia Diagnosis using Lung's XRay with Depthwise Convolution. \linebreak Final grade: 91/100 (top of the class).}}
+
+%------------------------------------------------------------------------------------------------------------
+%	INTERNSHIP SECTION
+%------------------------------------------------------------------------------------------------------------
+\section{Internship}
+\cventry{03/2018 -- }{Machine Learning Engineer intern (Part time intern)}{\href{http://cbdrobot.com/}{\textit{CBD Robotics, 125 Dong Van Cong Str. District 2, Ho Chi Minh City, Vietnam}}}{}{}{}
+\cvitem{Work}{Learn about and work on the technical side with focus on data analytics with using Machine Learning, Deep Learning.}
+\cvitem{Mini-projects}{House price prediction, Amazon Reviews, Airline Arrivals, Boston marathon, Author classification.}
+\cventry{04/2018 -- 7/2018}{Data Analyst intern (Full time intern)}{\href{http://devnet.vn}{\textit{DevNet, 101b Mai Xuan Thuong, Vinh Hai, Nha Trang, Khanh Hoa, Vietnam}}}{}{}{}
+\cvitem{Work}{Query performance tuning.}
+\cvitem{}{Created A/B testing.}
+
+\cventry{07/2017 -- 10/2017}{.Net developer intern (Full time intern)}{\href{https://www.sweetsoft.vn}{\textit{SweetSoft Solutions, 30A Tran Quy Cap, Nha Trang, Khanh Hoa, Vietnam}}}{}{}{}
+\cvitem{Work}{Developed referral marketing system with .Net and MCV framework.}
+
+\cvitem{Lectures}{Software Architecture Development, SCRUM process, Company Culture.}
+
+%------------------------------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%------------------------------------------------------------------------------------------------------------
+\section{Certifications}
+\cvitem{{\href{https://www.datacamp.com/statement-of-accomplishment/course/9b23e879e608c4e31f929f5928e85d82b1893698}{Intro to Python for Data Science Course}}}{\href{https://www.datacamp.com/statement-of-accomplishment/course/9b23e879e608c4e31f929f5928e85d82b1893698}{Datacamp: Introduction fundamental programming concepts including data structures, networked application program interfaces, and databases, using Python to harvest insights and get a competitive edge.}}
+
+\cvitem{\href{https://www.datacamp.com/statement-of-accomplishment/course/9b69590d28c10b9395461fa299fb9d21405cd280}{Intermediate Python for Data Science Course}}{\href{https://www.datacamp.com/statement-of-accomplishment/course/9b69590d28c10b9395461fa299fb9d21405cd280}{Datacamp: Learn to visualize real data with matplotlib's functions and get to know new data structures such as the dictionary and the Pandas DataFrame. After covering key concepts such as boolean logic, control flow and loops in Python.}}
+
+\cvitem{\href{https://www.datacamp.com/statement-of-accomplishment/course/2d8aee3a33278a813190efa1f4940a97d5b888ea}{Deep Learning in Python Course}}{\href{https://www.datacamp.com/statement-of-accomplishment/course/2d8aee3a33278a813190efa1f4940a97d5b888ea}{Datacamp: Gain hands-on, practical knowledge of how to use deep learning with Keras 2.0. Optimization a neural network with backward propagation, building deep learning models, Fine-tuning keras model.}}
+
+\cvitem{\href{https://courses.edx.org/courses/course-v1:UCSanDiegoX+DSE200x+2T2017/course/}{Python for Data Science}}{\href{https://courses.edx.org/courses/course-v1:UCSanDiegoX+DSE200x+2T2017/course/}{edX: Applied experience in major areas of Machine Learning, including Prediction, Classification, Clustering, and Information Retrieval.}}
+
+\cvitem{\href{https://drive.google.com/file/d/11Roc3tAQaDzODxfM9kgcMBsRkwQTIPoE/view?usp=sharing}{Python for Everybody
+Specialization}}{\href{https://drive.google.com/file/d/11Roc3tAQaDzODxfM9kgcMBsRkwQTIPoE/view?usp=sharing}{University of Michigan: Introduction advanced programming concepts including
+data structures, networked application program interfaces, and databases, using the
+Python programming language.}}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\cventry{June 2018}{Lung nodule Analysis}{}{}{}{}
+\cvitem{}{- Extract data from \href{https://en.wikipedia.org/wiki/DICOM}{DICOM file}.}
+\cvitem{}{- Doing Erosion and Dilation in image processing.}
+\cvitem{}{- Doing Instance Segmentation.}
+\cvitem{}{- Using U-net deep learning architecture, training, testing and validating the model.}
+
+
+\cventry{April 2018}{Prediction of the FIFA World Cup 2018 using Random Forest}{}{}{}{}
+\cvitem{}{- Scraping, crawling data using Scrapy, Beautiful Soup.}
+\cvitem{}{- Extract, Transform, Load (ETL).}
+\cvitem{}{- Cleaning and doing Exploratory Data Analysis (EDA).}
+\cvitem{}{- Tuning machine learning model using Grid Search with Cross-Validation.}
+
+
+\cventry{March 2018}{Pneumonia Diagnosis using Lung's XRay with Depthwise Convolution}{}{}{}{}
+\cvitem{}{- Sampling, filtering images, pooling, convolving images for cleaning data.}
+\cvitem{}{- Using Inception-v3 deep learning architecture, training, testing and validating the model}
+\cvitem{}{- Evaluating learning model with using Precision and Recall.}
+%----------------------------------------------------------------------------------------
+%	Awards SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+\cventry{July 2018}{{\href{http://entropy.jvn.edu.vn/}{Entropy 2018 - Data Analytics Competition}}}{}{}{}{Advanced to the semi-final round of ENTROPY 2018 by JVN (John Von Neumann).}
+
+\cventry{Feb 2008}{{English speaking competition (India - Vietnam) 2018}}{}{}{}{The first prize in English speaking competition of celebrating 13 years of India - Vietnam relations.}
+
+\cventry{Dec 2016}{{CTF Information security competition in Da Nang}}{}{}{}{The third prize team in capture the flag competition.}
+
+%----------------------------------------------------------------------------------------
+%	Voluntary Experience SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Voluntary Experience}
+
+\cventry{September 2016}{{\href{https://challengevietnam.com}{Challenge Vietnam - wearetriathlon!}}}{\textsc{cycling leader team}}{}{}{With more than 40 races all over the world, athletes from over 30 countries, converged in Nha Trang to face one of the biggest challenges of the year, 1.9km Swim, 90km Bike and 21km Run. \linebreak  Assist athletes medical supports throughout the 90km race by leading volunteers taking their duties.}
+
+%----------------------------------------------------------------------------------------
+%	Skills SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills \& Abilities}
+
+\cvitem{Programming Languages}{{Python, C/C++, C-Sharp, Java, HTML, CSS, JavaScript, PHP, SQL.}}
+\cvitem{DataBase}{{LiteSQL, MySQL, SQL Sever, DB2.}}
+\cvitem{Mathematics}{{Algebra, Calculus, Probability/Statistic.}}
+\cvitem{NLP}{{Text summary, sentiment classification, text clustering, topic modeling, Bag-of-Words, Word2Vector, Sen2Vec, n-grams, TF/IDF, LDA, LSA, NNMF.}}
+\cvitem{Computer Vision}{{Corner Detector, Homographies, Image Warping, Augmented Reality.}}
+\cvitem{IDE}{{Anaconda, Jupyter Notebook, Eclipse, Pycharm, pgAdmin4, Navicat.}}
+\cvitem{Office tools}{{Latex, Microsoft Office (Word, Excel, Powerpoint).}}
+\cvitem{System}{{Linux, Windows.}}
+
+
+%----------------------------------------------------------------------------------------
+%	Masters SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Masters Thesis}
+
+%\cvitem{Title}{\emph{Technologies and characterization of ferroelectric polymers for biomedical sensors}}
+%\cvitem{Supervisors}{Professor Antonino Fiorillo}
+%\cvitem{Description}{This thesis is based on the implementation of a temperature sensor.}
+
+
+%------------------------------------------------
+
+%\section{Work Experience}
+
+%\cventry{Dec 2015 --
+%Present}{Assistant Engineer}{\textsc{Integrated Motions, Inc}}{Berkeley}{Ca}{Contracted with ChemiSense to characterize and calibrate proprietary air quality sensors.}
+
+%\cventry{June 2015 --
+%Present}{Undergraduate Researcher}{\href{http://best.berkeley.edu/best-research/best-berkeley-emergent-space-tensegrities-robotics/}{\textsc{UC Berkeley Emergent Space Tensegrities Lab}}}{}{}{Collaborating in the design, manufacturing, and assembling of a tensegrity robot.  Designed and manufactured an apparatus to test the friction in the end caps.  Helped design new end caps that reduced friction.  Working to create a 3-D model that mimics the orientation of the robot using sensor readings.}
+
+%\cventry{June 2015 --
+%Dec 2015}{Independent Contractor}{\textsc{California Department of Public Health}}{Richmond}{Ca}{Used wet and dry air to regulate the relative humidity in an environmental chamber.  Designed and implemented a closed-loop controller in LabVIEW.  Setup a Data Acquisition Module (DAQ) to take sensor readings and manage multiple mass flow controllers.}
+
+%\cventry{March 2007 --
+%June 2012}{Transportation Security Officer}{\textsc{Covenant Aviation Security, LLC}}{San Francisco}{Ca}{Thoroughly screened passengers using a variety of new technology to protect all passengers while maintaining a high level of professionalism with excellent customer service.  Promoted as a recruitment team member to lead the hiring process.  This included reviewing resumes, conducting interview, and helping new hires with the on-boarding process.  Successfully completed a Professional Development program aimed at developing managerial skills.}
+
+%\cventry{Aug 2006 --
+%March 2007}{Leasing Agent}{\textsc{Braddock and Logan Services, LLC}}{Danville}{Ca}{Provided superior customer service and communication to high-end residents and prospects.  Maximized customer satisfaction and increased renewals, revenue, reputation and profitability.  Assisted in maintenance, lease administration, eviction, vacancy anticipation, collection, marking, lease renewals and audits.  Prepared weekly and monthly rental statistic reports and market rent surveys.}
+
+%\cventry{Oct 2005 --
+%Aug 2006}{Tire Installer}{\textsc{Costco Wholesale}}{Livermore}{Ca}{Drove customer vehicles into/out of installation bay and raised vehicles using a hydraulic lift.  Mounted and dismounted tires from the rims and balanced them using a balancing machine.  Assisted members in determining the correct tires needed for their vehicle.  Ensured tires were properly inflated and lug nuts were properly tightened.  Repaired flat tires.}
+
+%\cventry{Aug 2005 --
+%Oct 2005}{Front Desk Receptionist}{\textsc{24 Hour Fitness}}{Fremont}{Ca}{Greeted all incoming members and guests and directed them appropriately.  Operated a cash register and sold merchandise to members.  Maintained logs of maintenance requests and member concerns.  Performed general cleaning duties.}
+
+%\cventry{Feb 2004 --
+%Aug 2005}{Desktop Support Technician}{\textsc{CafePress.com}}{Foster City}{Ca}{Supported two locations with 200+ employees.  Diagnosed hardware and software issues and handled new equipment roll-out.  Prepared reports for hardware and software auditing and also license and asset tracking.  Administrated the mail server, phone system, alarm system, and building access.}
+
+%\cventry{Nov 2003 --
+%Feb 2004}{Seasonal Sales Associate}{\textsc{Macy's}}{Concord}{Ca}{Provided excellent customer service throughout the transaction process.  Provided assistance in the selection of merchandise to purchase.  Continually met personal sales goals and member reward card enrollment goals.  Processed returns courteously and professionally.}
+
+%\cventry{June 2003 --
+%Aug 2003 \& June 2002 -- Jan 2003}{IT Technician}{\textsc{Eskanos and Adler, Lawfirm Collections Agency}}{Concord}{Ca}{Provided IT support for 140+ users and was the primary contact for the call center employees.  Troubleshot computer and network issues as well as software and hardware upgrades.  Built new hire workstations.  Created an inventory of computer assets and a method for tracking new and retired computer parts.}
+
+
+%----------------------------------------------------------------------------------------
+%	Coursework SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Coursework}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists%
+
+%\cvlistdoubleitem{Thermodynamics}{Heat Transfer}
+%\cvlistdoubleitem{Combustion Processes}{Fluid Mechanics}
+%\cvlistdoubleitem{Introduction to Mechanical Systems for Mechatronics}{Design of Microprocessor Based Mechanical Systems}
+%\cvlistdoubleitem{Mechanical Engineering Laboratory}{Introduction to Solid Mechanics}
+%\cvlistdoubleitem{Mechanical Behavior of Engineering Materials}{Dynamic Systems and Feedback Control}
+%\cvlistdoubleitem{Mechatronics Design}{Feedback Control Systems}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+\cvitem{Academic}{Research in digital signal/image processing algorithms, exploration in data analysis,
+machine learning and big data.}
+
+\cvitem{Social}{Traveling, swimming and hanging out.}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists%
+
+\cvlistdoubleitem{English: IELTS 6.5, Toeic 750}{Vietnamese: Native Speaker}
+
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+\section{Sources}
+\cvitem{Linkedin}{\faLinkedinSquare \hspace{0.8mm} \href{https://www.linkedin.com/in/phuccoi96/}{\textit{Linkedin.com/in/phuccoi96}}}
+\cvitem{Github}{\faGithub \hspace{0.8mm} \href{https://github.com/TrinhDinhPhuc}{\textit{Github.com/TrinhDinhPhuc}}}
+\cvitem{Medium}{\faMedium \hspace{0.8mm} \href{https://medium.com/@phuccoi996}{\textit{Medium.com/@phuccoi996}}}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

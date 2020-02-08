@@ -1,0 +1,337 @@
+\chapter{Thực hành với \LaTeX}
+
+\section{Đại số}
+\begin{dl}
+	Giải phương trình: $(\sin x+\cos x)^2=1+\cos x$
+\end{dl}
+\begin{proof}~\\[8pt]
+	Ta có 
+	\begin{align*}
+		&~(\sin x+\cos x)^2=1+\cos x\\
+		\Leftrightarrow&~1+2\sin x\cos x=1+\cos x\\
+		\Leftrightarrow&~\cos x\cdot(2\sin x-1)=0\\
+		\Leftrightarrow&~\left[
+			\begin{array}{l}
+				\cos x=0\\[8pt]
+				\sin x=\dfrac{1}{2}
+				\end{array}
+			\right.
+		\Leftrightarrow \left[
+		\begin{array}{l}
+		x=\dfrac{\pi}{2}+k\pi\\[8pt]
+		x=\dfrac{\pi}{6}+k2\pi\\[8pt]
+		x=\dfrac{5\pi}{6}+k2\pi
+		\end{array} (k\in\mathbb{Z})\right.
+	\end{align*}
+	Vậy phương trình đã cho có 3 họ nghiệm.
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%-------câu 9
+\begin{dl}
+	Giải bất phương trình: \begin{equation}\label{eq_9}
+	\left(2-\dfrac{3}{x}\right)\left(2\sqrt{x-1}-1\right) \geq \dfrac{4-8x+9x^2}{3x+2\sqrt{2x-1}}
+	\end{equation}
+\end{dl}
+\begin{proof}~
+	\begin{itemize}
+	\item  ĐK: $x\geq 1$. Ta có
+	\begin{align}
+		(\ref{eq_9})&\Leftrightarrow \frac{(2x-3)\left(2\sqrt{x-1}-1\right)}{x}\geq \frac{9x^2-4(2x-1)}{3x+2\sqrt{2\sqrt{2x-1}}}\nonumber\\
+		&\Leftrightarrow \frac{(2x-3)\left(2\sqrt{x-1}-1\right)}{x}\geq 3x-2\sqrt{2x-1}\nonumber\\
+		&\Leftrightarrow (2x-3)\left(2\sqrt{x-1}-1\right)\geq 3x^2-2x\sqrt{2x-1} \quad(\mbox{do }x\geq 1)\nonumber\\
+		&\Leftrightarrow 2\left(x-1-\sqrt{x-1}\right)^2+\left(x-\sqrt{2x-1}\right)^2+2\left(\sqrt{x-1}+x-1\right)\leq 0\label{ptcau9_2}
+	\end{align}
+	\item Ta có nhận xét sau: $\begin{cases}
+	\left(x-1-\sqrt{x-1}\right)^2\geq 0\\[6pt]
+	\left(x-\sqrt{2x-1}\right)^2\geq 0\\[6pt]
+	\left(\sqrt{x-1}+x-1\right)\geq 0 \mbox{ (do } x\geq 1)
+	\end{cases}\Rightarrow \mbox{VT}_{(\ref{ptcau9_2})}\geq 0$
+	\item Vậy để $(\ref{ptcau9_2})$ xảy ra thì $\Leftrightarrow \mbox{VT}_{(\ref{ptcau9_2})}=0\Leftrightarrow
+	\begin{cases}
+	x-1=\sqrt{x-1}\\[6pt]
+	x=\sqrt{2x-1}\\[6pt]
+	x-1=0
+	\end{cases}\Leftrightarrow x=1$
+	\end{itemize}
+\end{proof}
+
+%%%%%%%%%%%%%%-----------câu 10
+\begin{dl}
+	Cho $a, b, c>0$ và thỏa mãn: $c=\min\{a,b,c\}$. Tìm Giá trị nhỏ nhất của biểu thức:
+	\begin{equation}\label{eq_pt10}
+	P=\sqrt{\dfrac{a}{b+c}}+\sqrt{\dfrac{b}{c+a}}+\dfrac{2\ln\left( \dfrac{6(a+b)+4c}{a+b}\right)}{\sqrt[4]{\dfrac{8c}{a+b}}}
+	\end{equation}
+\end{dl}
+\begin{proof}~
+	\begin{itemize}
+		\item Ta có
+	\begin{align}
+		\sqrt{\frac{a}{b+c}}+\sqrt{\frac{b}{c+a}}=\frac{a^2}{a\sqrt{a(b+c)}} +\frac{b^2}{b\sqrt{b(c+a)}}&\geq \frac{(a+b)^2}{a\sqrt{a(b+c)}+ b\sqrt{b(c+a)}}\quad \mbox{(xem phần phụ lục } \ref{hq1})\nonumber\\
+		\frac{(a+b)^2}{a\sqrt{a(b+c)}+ b\sqrt{b(c+a)}}&\geq \frac{(a+b)^2}{\sqrt{(a+b)\left[a^2(b+c)+b^2(c+a)\right]}}\label{eq10_1}
+	\end{align}
+	\item Mặt khác, vì $c=\min \{a,b,c\}\Rightarrow a+b-2c\geq 0$. Nên ta có
+	$$a^2(b+c)+b^2(c+a)=ab(a+b-2c)+c(a+b)^2\leq \left(\frac{a+b}{2}\right)^2(a+b-2c)+c(a+b)^2$$
+	\begin{equation}\label{eq10_2}
+	\left(\frac{a+b}{2}\right)^2(a+b-2c)+c(a+b)^2=\frac{(a+b)^3+2c(a+b)^2}{4}
+	\end{equation}
+	Từ $(\ref{eq10_1})$ và $(\ref{eq10_2})$ suy ra $$\sqrt{\frac{a}{b+c}}+\sqrt{\frac{b}{c+a}}\geq 2\sqrt{\frac{a+b}{a+b+2c}}$$
+	\item Ta lại có
+	\begin{equation}\label{eq10_3}
+	\ln\left[\frac{6(a+b)+4c}{a+b}\right]=\ln\left[2\left(\frac{a+b+2c}{a+b}+2\right)\right]\geq \ln\left[\left(\sqrt{1+\frac{2c}{a+b}}+\sqrt{2}\right)^2\right]
+	\end{equation}
+	\item Mặt khác: vì $c=\min\{a,b,c\}\Rightarrow 2c\leq a+b$. Nên ta có
+	\begin{equation}\label{eq10_4}
+	\sqrt[4]{\frac{8c}{a+b}}\leq \sqrt[4]{2\cdot\frac{a+b+2c}{a+b}}\leq\frac{1}{2} \left(\sqrt{1+\frac{2c}{a+b}}+\sqrt{2}\right)
+	\end{equation}
+	Từ $(\ref{eq10_2}), (\ref{eq10_3}), (\ref{eq10_4})$ ta được\\[-10pt]
+	$$P\geq \frac{2}{\sqrt{1+\dfrac{2c}{a+b}}}+\frac{8\ln\left( \sqrt{1+\dfrac{2c}{a+b}}+\sqrt{2}\right)}{\sqrt{1+\dfrac{2c}{a+b}}+\sqrt{2}}$$
+	\item Đặt $t=\sqrt{1+\dfrac{2c}{a+b}}$, do $c=\min\{a,b,c\}\Rightarrow \dfrac{2c}{a+b}\leq 1\Rightarrow t\leq \sqrt{2}$\\[10pt]
+	\item Xét hàm $f(t)=\dfrac{2}{t}+\dfrac{8\ln\left(t+\sqrt{2}\right)}{t+\sqrt{2}}$, trên $t\in\left(0;\sqrt{2}\right]$\\[10pt]
+	\item Ta có
+	$$f'(t)=\frac{-2}{t^2}+\frac{8}{\left(t+\sqrt{2}\right)^2}-\frac{8\ln\left(t+ \sqrt{2}\right)}{\left(t+\sqrt{2}\right)^2}=
+	\frac{\left(t-\sqrt{2}\right)\left(3t+\sqrt{2}\right)}{t^2\left(t+\sqrt{2}\right)^2}-\frac{8\ln\left(t+ \sqrt{2}\right)}{\left(t+\sqrt{2}\right)^2},~\forall t\in\left(0;\sqrt{2}\right] 
+	$$
+	Suy ra: $f(t)\geq f(\sqrt{2})=2\left(1+\ln 8\right)$\\[-5pt]
+
+
+	Vậy $P_{\min} =2\left(1+\ln 8\right)$.\\[8pt]
+	Dấu ``$=$'' xảy ra khi và chỉ khi $a=b=c$.
+	\end{itemize}
+\end{proof}
+
+\section{Giải tích}
+\begin{dl}
+	Cho hàm số $(C): y=\dfrac{3-2x}{x-1}$. Khảo sát sự biến thiên và vẽ đồ thị $(C)$ của hàm số.
+\end{dl}
+\begin{proof}~\\[8pt]
+	Hàm số:
+	$y=\dfrac{3-2x}{x-1}=\dfrac{-2x+3}{x-1}$
+	\begin{itemize}
+		\item Tập xác định $D=\mathbb{R} \backslash \left\{ 1 \right\}$
+		\item Đạo hàm: $y'=\dfrac{-1}{(x-1)^2}<0,~\forall x\in D$
+		\item Hàm số nghịch biến trên các khoảng xác định $(-\infty;1)$ và $(1;+\infty)$ và không có đạt cực trị.		
+		\item Giới hạn và tiệm cận: 
+		$\lim\limits_{x\rightarrow -\infty} =-2;  \lim\limits_{x\rightarrow +\infty} =-2\Rightarrow y=-2$ là tiệm cận ngang.
+		\item $\lim\limits_{x\rightarrow 1^-} =-\infty; \lim\limits_{x\rightarrow 1^+} =+\infty\Rightarrow x=1$ là tiệm cận đứng.		
+		\item Bảng biến thiên
+		\begin{center}
+			\input{bbt}
+		\end{center}
+		\item Bảng giá trị
+		\begin{center}
+			\input{banggiatri.tex}
+		\end{center}
+		\item Đồ thị
+		\begin{center}
+			\input{dothi}
+		\end{center}
+	\end{itemize}
+\end{proof}
+
+%%%%%%%%%----------câu 2
+\begin{dl}
+	Viết phương trình tiếp tuyến của $(C)$ biết tiếp tuyến song song với đường thẳng $\Delta:$ $$y=-x+1$$
+\end{dl}
+\begin{proof}~\\[8pt]
+	$(C): y=\dfrac{-2x+3}{x-1}$\\[8pt]
+	Gọi $M(x_0;y_0)\in(C)$ là tiếp điểm, phương trình tiếp tuyến tại $M$ có dạng \begin{equation}\label{pttt}
+	y=f'(x_0)(x-x_0)+y_0
+	\end{equation}
+	Vì tiếp tuyến song song với đường thẳng $\Delta: y=-x+1$ nên có hệ số góc $f'(x_0)=-1$
+
+	$$(\ref{pttt})\Leftrightarrow \frac{-1}{(x_0-1)^2}=-1\Leftrightarrow (x_0-1)^2=1\Leftrightarrow \left[\begin{array}{l}
+	x_0-1=~~1\\x_0-1=-1
+	\end{array}\right.\Leftrightarrow
+	\left[\begin{array}{l}
+	x_0=2\\x_0=0
+	\end{array}\right.$$
+	\begin{itemize}
+		\item Với $x_0=2\Rightarrow y_0=-1$. PTTT là: $y+1=-1(x-2)\Leftrightarrow y=-x+1 \mbox{ (loại)}$
+		
+		\item Với $x_0=0\Rightarrow y_0=-3$. PTTT là: $y+3=-1(x-0)\Leftrightarrow y=-x-3$
+	\end{itemize}
+\end{proof}
+
+\begin{dl}~
+	\begin{enumerate}[a)]
+		\item Tìm số phức liên hợp của số phức $z$ thỏa mãn $3z+9=2i.\overline{z}+11i$.
+		\item Giải hệ phương trình: $\log_{\frac{1}{2}} (x^2+5)+2\log_2(x+5)=0$
+	\end{enumerate}
+\end{dl}
+\begin{proof}~
+	\begin{enumerate}[a)]
+		\item Gọi số phức 
+		$z=a+bi,~(a,b\in\mathbb{R})$. Ta có
+		\begin{equation}\label{eq2}
+		3z+9=2i.\bar{z}+11i\Leftrightarrow 3(a+bi)+9=2i(a-bi)+11i
+		\end{equation}
+	
+	
+		$$
+		(\ref{eq2})\Leftrightarrow \begin{cases}
+		3a+9=2b\\
+		3b=2a+11
+		\end{cases}\Leftrightarrow 
+		\begin{cases}
+		3a-2b=-9\\
+		-2a+3b=11
+		\end{cases}\Leftrightarrow\begin{cases}
+		a=-1\\
+		b=3
+		\end{cases}
+		$$
+		Ta có $z=-1+3i\Rightarrow \bar{z}=-1-3i$
+		\item  Điều kiện: $\begin{cases}
+		x^2+5>0\\
+		x+5>0
+		\end{cases}\Leftrightarrow x+5>0\Leftrightarrow x>-5$\\
+		\begin{itemize}
+			\item  Khi đó\\[4pt]
+		$\mbox{\quad}\log_{\frac{1}{2}} (x^2+5)+2\log_2(x+5)=0$\\[4pt]
+		$\Leftrightarrow-\log_{2} (x^2+5)+\log_2(x+5)^2=0$\\[4pt]
+		$\Leftrightarrow\log_2(x+5)^2=\log_{2} (x^2+5)$\\[-6pt]
+	
+	$\Leftrightarrow (x+5)^2=x^2+5\Leftrightarrow x^2+10x+25=x^2+5\Leftrightarrow 10x=-20\Leftrightarrow x=-2$ (nhận)
+		\item Vậy, phương trình có nghiệm duy nhất: $x=-2$
+		\end{itemize}
+	\end{enumerate}
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%--------------câu 4
+\begin{dl}
+	Tính tích phân: $I=\int_{0}^{1} x\left(x+e^{z^2}\right)dx$
+\end{dl}
+\begin{proof}~\\
+	Ta có
+	$$I=\int_{0}^{1} x\left(x+e^{z^2}\right)dx=\int_{0}^{1} x^2 dx+\int_{0}^{1}xe^{z^2}dx=I_1+I_2
+	$$
+Ta tính
+	$$I_1=\int_{0}^{1} x^2dx= \left.\frac{x^3}{3}\right|_0^1=\frac{1}{3}$$
+Đặt: $t=x^2\Rightarrow dt=2xdx\Rightarrow \dfrac{dt}{2}=xdx$. Đổi cận
+	\begin{center}
+		\input{doican.tex}
+	\end{center}
+	$$I_2=\int_0^1 e^t\frac{dt}{2}=\frac{1}{2}\bigg.e^t\bigg|_0^1=\frac{1}{2}e-\frac{1}{2}
+	$$
+Vậy
+	$$I=I_1+I_2=\frac{1}{3}+\frac{1}{2}e-\frac{1}{2}=\frac{1}{2}e-\frac{1}{6}$$
+\end{proof}
+
+
+\section{Hình học}
+\begin{dl}
+	Trong không gian $Oxyz$, cho 3 điểm $A(4;-4;3), B(1;3;-1), C(-2;0;1)$. Viết phương trình mặt cầu $(S)$ đi qua các điểm $A, B, C$ và cắt hai mặt phẳng $(\alpha): \mbox{\textit{x}+\textit{y}+\textit{z}+2=0}$ và $(\beta): x-y-z-4=0$ theo hai giao tuyến là hai đường tròn có bán kính bằng nhau.
+\end{dl}
+\begin{proof}~\\[8pt]
+	Gọi $I(a;b;c)$ là tâm của mặt cầu $(S)$.
+	Vì $(S)$ đi qua các điểm $A, B, C$ và cắt hai mặt phẳng $(\alpha): x+y+z+2=0$ và $(\beta): x-y-z-4=0$ theo 2 giao tuyến là hai đường tròn có bán kính bằng nhau nên ta có hệ
+	$$\begin{cases}
+	IA=IB\\
+	IA=IC\\
+	d(I,(\alpha))=d(I,(\beta))
+	\end{cases}\Leftrightarrow
+	\begin{cases}
+	3a-7b+4c=15\\
+	3a-2b+2c=9\\
+	|a+b+c+2|=|a-b-c-4|
+	\end{cases}
+	\Leftrightarrow \begin{cases}
+	a=1\\b=0\\c=3
+	\end{cases}\vee \begin{cases}
+	a=\dfrac{19}{7}\\[10pt]
+	b=-\dfrac{12}{7}\\[10pt]
+	c=-\dfrac{9}{7}
+	\end{cases}$$
+	\begin{itemize}
+		\item Với $\begin{cases}
+			a=1\\b=0\\c=3
+		\end{cases}$, viết được phương trình mặt cầu: $(x-1)^2+y^2+(z-3)^2=25$
+
+
+	\item  Với $\begin{cases}
+	a=\dfrac{19}{7}\\[10pt]
+	b=-\dfrac{12}{7}\\[10pt]
+	c=-\dfrac{9}{7}
+	\end{cases}$, viết được phương trình mặt cầu: $$\left(x-\frac{19}{7}\right)^2+ \left(y+\frac{12}{7}\right)^2+ \left(z+\frac{9}{7}\right)^2=\frac{1237}{49}$$
+	\end{itemize}
+\end{proof}
+
+%%%%%%%%%%%%----------câu 7
+\begin{dl}
+	Cho khối chóp $S.ABC$ có $SA$ vuông góc với mặt đáy $(ABC)$, tam giác $ABC$ vuông cân tại $B$, $SA=a$, $SB$ hợp với đáy một góc $30^0$. Tính thể tích của khối chóp $S.ABC$ và tính khoảng cách giữa $AB$ và $SC$.
+\end{dl}
+\begin{proof}~
+	\begin{center}
+		\input{hinhcau7.tex}
+	\end{center}
+	\begin{itemize}
+		\item Ta có $\begin{cases}
+		SA\perp (ABC)\\ AB\subset (ABC)
+		\end{cases}$
+		$\Rightarrow SA\perp AB\Rightarrow AB$ là hình chiếu của $SB$ lên $(ABC)$, do đó $\widehat{SBA}=30^0$\\
+		\item Tam giác $SAB$ vuông tại $A$ nên $$\cot \widehat{SBA}=\frac{AB}{SA} \Rightarrow BC=AB=SA.\cot\widehat{SBA}
+		=a.\cot 30^0=a\sqrt{3}$$
+		\item $S_{ABC}=\dfrac{1}{2}AB.BC=\dfrac{1}{2}a\sqrt{3}.a\sqrt{3}=\dfrac{3a^2}{2}$\\[3pt]
+		\item Vậy thể tích khối $S.ABC$ là
+		$$V=\frac{1}{3}SA.S_{ABC}=\frac{1}{3}.a.\frac{3a^2}{2}=\frac{a^3}{2}$$
+		\item Trong mp$(ABC)$, kẻ $AI\parallelsum BC$ và kẻ $CI\parallelsum AB$
+		$\Rightarrow ABCI$ là hình vuông cạnh $a\sqrt{3}$\\
+		\item Trong mp$(SAI)$, kẻ $AH$ vuông góc với $SI$, ta có
+		$$\begin{cases}
+		AH\perp SI\\AH\perp CI~\Big(CI\perp (SAI)\Big)
+		\end{cases}\Rightarrow AH\perp (SIC)$$
+		Nên $d(AB,SC)=d\Big(A;(SIC)\Big)=AH$
+		\item Tam giác $SAI$ vuông tại $A$ nên
+		$$\frac{1}{AH^2}=\frac{1}{SA^2}+\frac{1}{AI^2}\Rightarrow AH=\frac{AI.SA}{\sqrt{AI^2+SA^2}}=\frac{a.a\sqrt{3}}{\sqrt{a^2+3a^2}}=\frac{a\sqrt{3}}{2}$$
+		Vậy khoảng cách của $AB$ và $SC$ bằng $\dfrac{a\sqrt{3}}{2}$
+	\end{itemize}
+\end{proof}
+
+%%%%%%%%%%%%%%%%%---------câu 8
+\begin{dl}
+	Trong mặt phẳng tọa độ $Oxy$, cho hình chữ nhật $ABCD$ có hình chiếu $B$ lên $AC$ là $E(5;0)$, trung điểm $AE$ và $CD$ lần lượt là $F(0;2), I\left(\dfrac{3}{2};-\dfrac{3}{2}\right)$. Viết phương trình đường thẳng $CD$.
+\end{dl}
+\begin{proof}~
+	\begin{center}
+		\input{hinhcau8.tex}
+	\end{center}
+
+	\begin{itemize}
+		\item Do $F$ là trung điểm $AE$ nên đỉnh $A(-5;4)$
+	$\Rightarrow$ phương trình đường thẳng $(AC):$ $$2x+5y-10=0$$
+	
+		\item Ta đi chứng minh: $BF\perp IF$. Thật vậy ta có\\[6pt]
+		$\overrightarrow{BF}=\dfrac{1}{2}\left(\overrightarrow{BA}+ \overrightarrow{BE}\right)$\\[8pt]
+		$\overrightarrow{FI}=\dfrac{1}{2}\left(\overrightarrow{FD}+\overrightarrow{FC}\right)=\dfrac{1}{2}\left(\overrightarrow{AD}+\overrightarrow{EC}\right)$
+		
+		\begin{align*}
+			\Rightarrow 4\overrightarrow{BF}.\overrightarrow{FI}
+				&=\left(\overrightarrow{BA}+ \overrightarrow{BE}\right)\left(\overrightarrow{AD}+\overrightarrow{EC}\right)\\
+				&=\overrightarrow{BA}.\overrightarrow{AD}+ \overrightarrow{BA}.\overrightarrow{EC}+ \overrightarrow{BE}.\overrightarrow{AD}+\overrightarrow{BE}.\overrightarrow{EC}\\
+				&=\overrightarrow{BA}.\overrightarrow{EC}+ \overrightarrow{BE}.\overrightarrow{AD}\\
+				&=\overrightarrow{EA}.\overrightarrow{EC}+ \overrightarrow{BE}.\overrightarrow{BC}\\
+				&=-\overrightarrow{BE}^2+\overrightarrow{BE}^2\\
+				&=0
+		\end{align*}
+		\item $BF\perp IF$ nên có phương trình: $7x+3y-6=0$
+		\item $BE$ đi qua $E$ và vuông góc $EF$ nên có phương trình: $5x-2y-25=0$.
+		Do đó $B(7;5)$	
+		\item Từ đây tìm được phương trình $(CD):$ $$2x-24y-39=0$$
+	\end{itemize}
+\end{proof}
+\section{Tổ hợp và Xác suất}
+\begin{dl}
+	Một tổ gồm 9 học sinh nam và 3 học sinh nữ. Cần chia tổ đó thành 3 nhóm, mỗi nhóm 4 học sinh để đi làm 3 công việc trực nhật khác nhau. Tính xác suất để khi chia ngẫu nhiên ta được mỗi nhóm có đúng 1 nữ.
+\end{dl}
+\begin{proof}~
+	\begin{itemize}
+		\item Phép thử: ``Sắp 12 học sinh vào 3 nhóm khác nhau''\\[4pt]
+		$\Rightarrow$ Số phần tử của không gian mẫu: $n(\Omega)=\mbox{\textbf{C}}_{12}^4.\mbox{\textbf{C}}^4_8.\mbox{\textbf{C}}_4^4=34~ 650$
+		\item Gọi $A$ là biến cố: ``Sắp 12 học sinh vào 3 nhóm khác nhau có đúng 1 nữ''\\[4pt]
+		$\Rightarrow$ Số kết quả thuận lợi cho biến cố $A$ là $$n(A)=\mbox{\textbf{C}}_3^1.\mbox{\textbf{C}}_9^3.\mbox{\textbf{C}}_2^1.\mbox{\textbf{C}}_6^3.\mbox{\textbf{C}}^1_1.\mbox{\textbf{C}}^3_3=10~080$$
+		\item Xác suất của biến cố là
+		$$P(A)=\frac{n(\Omega)}{n(A)}=\frac{10~080}{34~ 650}=\frac{16}{55}
+		$$
+		\item Vậy xác suất cần tìm là $\dfrac{16}{55}$
+	\end{itemize}
+\end{proof}

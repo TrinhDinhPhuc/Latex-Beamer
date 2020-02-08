@@ -1,0 +1,25 @@
+\documentclass[a4paper,openany]{book}
+\usepackage[13pt]{extsizes}
+\usepackage[utf8]{vietnam}
+\input def
+\makeindex
+
+
+\begin{document}
+\pagestyle{myplain}
+\include{biangoai}
+\include{biantrong}
+\include{loicamon}
+\tableofcontents
+
+
+\include{loinoidau}
+\include{doidieuvelatex}
+\include{thuchanhvoilatex}
+\include{phuluc}
+\include{thamkhao}
+\newpage
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+
+\end{document}

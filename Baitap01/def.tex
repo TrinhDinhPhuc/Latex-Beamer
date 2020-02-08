@@ -1,0 +1,127 @@
+\usepackage{amsmath,amsxtra,amssymb,latexsym, amscd,amsthm}
+\usepackage[unicode,colorlinks,linkcolor=red]{hyperref}
+\usepackage{indentfirst}
+\usepackage[mathscr]{eucal}
+\usepackage{color}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage[centerfoot]{pageno}
+\usepackage{longtable}
+\usepackage{arydshln}
+\usepackage{multirow}
+\usepackage[left=1.5cm,right=2cm,top=1.5cm,bottom=1.5cm]{geometry}
+%%%%%%%%%%%%%%%---------khai bao hinh
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+
+
+
+
+
+\setlength\dashlinedash{3pt}
+\setlength\dashlinegap{3.5pt}
+\setlength\arrayrulewidth{0.2pt}
+
+\newcommand{\dongChuaBai}[2]{\multirow{2}{*}{#1}&#2&\multirow{2}{*}{0,25}\\[8pt]}
+\newcommand{\dongChuaDiem}[1]{&#1&\multirow{2}{*}{0,25}\\[8pt]}
+\newcommand{\dongGiua}[1]{&#1&\\}
+
+\newcommand{\titleDef}[1]{\hline\hline
+	\begin{minipage}[c]{1cm} 
+		\begin{center}
+			\textbf{Câu} 
+		\end{center}
+	\end{minipage}&
+	\begin{minipage}[c]{14cm}
+		\begin{center}
+			\textbf{Đáp án (Trang 0#1)}
+		\end{center}
+	\end{minipage}&
+	\begin{minipage}[b]{1cm}
+		\begin{center}
+			\textbf{Điểm}
+		\end{center}
+	\end{minipage}\\%----------------------------
+	\hline\hline
+}
+\newcommand{\rowOne}[2]{\multirow{4}{*}{
+	\begin{minipage}[c]{1cm}
+		\begin{center}
+			#1 
+		\end{center}
+	\end{minipage}}
+	&\begin{minipage}[c]{14cm}
+		~\\[6pt]
+		#2
+	\end{minipage}
+	&
+	\begin{minipage}[c]{1cm}
+		\begin{center}
+			0,25
+		\end{center}
+	\end{minipage}\\
+	\cdashline{2-3}
+}
+\newcommand{\rowCenter}[1]{&\begin{minipage}[c]{14cm}~\\[6pt]
+		#1
+	\end{minipage}&
+	\begin{minipage}[c]{1cm}
+		\begin{center}
+			0,25
+		\end{center}
+	\end{minipage}\\
+	\cdashline{2-3}}
+\newcommand{\rowEnd}[1]{&\begin{minipage}[c]{14cm}~\\[6pt]
+		#1
+	\end{minipage}&
+	\begin{minipage}[c]{1cm}
+		\begin{center}
+			0,25
+		\end{center}
+	\end{minipage}\\
+	\hline\hline}
+%%-----------cau 7
+\newcommand{\sevenBegin}[2]{\multirow{4}{*}{
+		\begin{minipage}[c]{5.4cm}
+			\begin{center}
+				#1 
+			\end{center}
+		\end{minipage}}
+		&\begin{minipage}[c]{8cm}
+			~\\[6pt]
+			#2
+		\end{minipage}
+		&
+		\begin{minipage}[c]{1cm}
+			\begin{center}
+				0,25
+			\end{center}
+		\end{minipage}\\
+		\cdashline{2-3}
+	}
+\newcommand{\sevenCenter}[1]{&\begin{minipage}[c]{8cm}~\\[6pt]
+		#1
+	\end{minipage}&
+	\begin{minipage}[c]{1cm}
+		\begin{center}
+			0,25
+		\end{center}
+	\end{minipage}\\
+	\cdashline{2-3}}
+\newcommand{\sevenEnd}[1]{&\begin{minipage}[c]{8cm}~\\[6pt]
+		#1
+	\end{minipage}&
+	\begin{minipage}[c]{1cm}
+		\begin{center}
+			0,25
+		\end{center}
+	\end{minipage}\\}
+
+	
+	
+	
+	
+	
+	

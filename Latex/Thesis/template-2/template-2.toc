@@ -1,0 +1,10 @@
+\babel@toc {vietnamese}{}
+\beamer@sectionintoc {1}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{D\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u l\IeC {\'\ohorn }n}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{L\IeC {\`a}m th\IeC {\'\ecircumflex } n\IeC {\`a}o \IeC {\dj }\IeC {\h \ecircumflex } khai th\IeC {\'a}c d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u l\IeC {\'\ohorn }n?}{9}{0}{1}
+\beamer@sectionintoc {2}{C\IeC {\'a}c b\IeC {\uhorn }\IeC {\'\ohorn }c khai th\IeC {\'a}c d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u (Data collection)}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Chu\IeC {\h \acircumflex }n b\IeC {\d i} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u (Data preparation)}{19}{0}{2}
+\beamer@subsectionintoc {2}{3}{M\IeC {\^o} h\IeC {\`\i }nh ho\IeC {\'a} (Modeling)}{20}{0}{2}
+\beamer@subsectionintoc {2}{4}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} m\IeC {\^o} h\IeC {\`\i }nh (Model Evaluation)}{24}{0}{2}
+\beamer@sectionintoc {3}{Demo \IeC {\'a}p d\IeC {\d u}ng quy tr\IeC {\`\i }nh x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u l\IeC {\'\ohorn }n}{25}{0}{3}

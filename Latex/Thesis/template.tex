@@ -1,0 +1,127 @@
+\documentclass{beamer}
+\mode {
+\setbeamertemplate{background canvas}[vertical shading][bottom=red!10,top=blue!10]
+ 
+\usetheme{Warsaw}
+ 
+\usefonttheme[onlysmall]{structurebold}
+}
+ 
+\usepackage{cmap}
+\usepackage{amsmath,amssymb}
+\hypersetup{pdfpagemode=FullScreen,bookmarks=false}
+\usepackage{colortbl}
+\usepackage[utf8]{vietnam}
+\setbeamercovered{dynamic}
+\usepackage{url}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\usepackage{graphics}
+\usepackage{bbding}
+\usepackage{xcolor}
+ 
+\font\timesbhai=utmb8v at 12pt
+\font\timesihai=utmbi8v at 12pt
+\font\timesmot=utmr8v at 11pt
+\font\timesbbon=utmb8v at 14pt
+\font\utopiamuoi=putr8v at 10pt
+\font\utopiamot=putr8v at 11pt
+\font\utopiahai=putr8v at 12pt
+\font\utopiabon=putr8v at 14pt
+ 
+\newcommand{\DarkBlue}[1]{\textcolor[rgb]{0,0.08,0.45}{#1}}
+ 
+\newcommand{\trangtieude}[5]{
+\title[#1]{\textbf{\textcolor[rgb]{1.00,1.00,0.00}{\timesbbon #1}}\\ }
+\subtitle{\textbf{\textcolor[rgb]{1.00,1.00,0.00}{\utopiamuoi #2}}\\ }
+\author[#3]{#3}%
+%vspace*{-.25cm}
+\institute{#4 \and \textcolor[rgb]{0.98,0.00,0.00}{\textbf{\url{#5}}}}
+}
+ 
+\newcommand{\slide}[3]{
+\begin{frame}
+#1 % \transwipe[direction=0]
+\frametitle{\utopiamuoi #2}\pause
+\utopiamuoi #3
+\end{frame}
+}
+ 
+\newcommand{\Khoi}[2]{\begin{block}{#1}#2\end{block}}
+\newcommand{\Cot}[2]{\column{#1}#2}
+ 
+\begin{document}
+\trangtieude{Giải bài thi tuyển sinh Đại học năm 2010}{Môn Toán }{TS Nguyễn Thái Sơn}{Đại học Sư Phạm TP Hồ Chí Minh }{http://hcmup.edu.vn}
+\logo{\includegraphics[height=2cm]{flower.png}}
+\titlepage
+\section*{Nội Dung}
+%%%%%%%%%%%%%%%%%%%%% Viet vao day
+ 
+\slide{\transwipe[direction=0]}{I. PHẦN CHUNG CHO TẤT CẢ THÍ SINH (7,0 ĐIỂM)}{
+\Khoi{Câu I. (2,0 điểm)}{Cho hàm số $y=x^3-2x^2+(1-m)x+m \quad (1), m$
+là số thực.
+ 
+\begin{enumerate}
+\item Khảo sát sự biến thiên và vẽ đồ thị của hàm số khi $m=1$.
+\item Tìm $m$ để đồ thị của của hàm số $(1)$ cắt trục hoành tại ba điểm
+phân biệt có hoành độ $x_1,x_2,x_3$ thoả điều kiện $$x_1^2+x_2^2+x_3^2<4.$$
+\end{enumerate}}
+}
+\slide{\transwipe[direction=0]}{Câu I.}{
+ 
+\Khoi{2.}{Tìm $m$ để đồ thị của của hàm số $(1)$ cắt trục hoành tại ba điểm
+phân biệt có hoành độ $x_1,x_2,x_3$ thoả điều kiện: $$x_1^2+x_2^2+x_3^20 \\
+g(1) =-m \ne 0
+\end{array}
+\right. \pause
+\Longleftrightarrow \pause
+\left\lbrace
+\begin{array}{l}
+m\ne 0\\
+m > -\dfrac14
+\end{array}
+\right.
+$$
+}
+ 
+\slide{\transwipe[direction=0]}{Câu I.}{
+ 
+trong đó \pause $x_1=1$, $x_2$ và $x_3$ là nghiệm của phương trình (*).\pause
+ 
+Ta có:\pause $$x_1^2+x_2^2+x_3^2=1+ (x_2+x_3)^2-2x_2x_3= 1+ 1+2m=2+2m$$\pause
+ 
+Do đó:\pause $$x_1^2+x_2^2+x_3^2 < 4 \Longleftrightarrow 2+2m<4 \Longleftrightarrow m<1$$\pause
+ 
+Kết hợp với điều kiện ta có:\pause $$-\dfrac14 <m \> $\cos x \ne 0 $ và $1+\tan x \ne 0 $\\
+\> $\Longleftrightarrow$ \>$\cos x \ne 0 \ \text{và}\ \sin x+\cos x \ne 0$.
+\end{tabbing}
+\pause
+ 
+Ta có: $\sin(x+\frac{\pi}{4})=\dfrac{\sqrt{2}}{2}(\sin x+\cos x)$
+và $1+\tan x = \dfrac{\sin x+\cos x}{\cos x}$. \pause
+ 
+Do đó phương trình đã cho trở thành:\pause
+ 
+\begin{align}
+1+\sin x+\cos 2x=1 &\Longleftrightarrow -2\sin^2x+\sin x+1=0\nonumber \\
+&\Longleftrightarrow \left[ \begin{array}{l}
+\sin x=1 \quad \text{(\textit{loại, do điều kiện $\cos x \ne 0$)}} \\
+\sin x=-\dfrac{1}{2}
+\end{array} \right. \nonumber
+\end{align}
+}
+ 
+\slide{\transboxin}{Câu II.}{
+\begin{columns}
+\Cot{.4\textwidth}{
+\Khoi{}{Vậy nghiệm của phương trình đã cho là:}
+}\pause
+\Cot{.5\textwidth}{
+\Khoi{}{$$\left[ \begin{array}{l}
+x=-\dfrac{\pi}{6}+k2\pi \\ \\
+x=\ \ \dfrac{7\pi}{6}+k2\pi
+\end{array} \right.
+$$}
+}
+\end{columns}
+}
+\end{document}

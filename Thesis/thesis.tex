@@ -1,0 +1,130 @@
+%%14:53:45 30/6/2018 -VieTeX creates C:\Users\PhucCoi\Documents\Beamer\Thesis\thesis.tex
+%%%%%%%%%%%
+% Mẫu để các bạn làm slides trình chiếu khi thuyết trình.
+% Tôi chỉ lấy phần đơn giản nhất của gói lệnh beamer hướng dẫn
+% Các bạn tự tìm hiểu sau này.
+% Tác giả tài liệu này: Nguyễn Hữu Điển
+%  Khoa Toán - Cơ - Tin học
+ % Đại học Khoa học Tự nhiên Hà nội
+%Email: huudien@vnu.edu.vn, 
+%%%%%%%%%%%%%
+\documentclass[10pt]{beamer}
+\usepackage{amsmath,amsxtra,amssymb,latexsym, amscd,amsthm}
+\usepackage{indentfirst}
+\usepackage[mathscr]{eucal}
+\usepackage{color}
+\usepackage[utf8]{vietnam}
+%\usetheme{split}
+\usepackage{beamerthemesplit}
+%\usepackage{beamerthemesidebar}
+%\usetheme{Warsaw}
+% \usetheme{bergen}
+%  \usetheme{Madrid}
+ %\usetheme{boadilla}
+%\setbeamercovered{transparent}
+
+\usepackage[english]{babel}
+
+\usepackage{listings}
+\title{Dùng Beamer tạo trang thuyết trình}
+\author{Nguyễn Hữu Điển}
+%\subject{Presentation Programs}
+\institute[ĐHKHTN Hà Nội]{
+  Khoa Toán - Cơ - Tin học\\
+  Đại học Khoa học Tự nhiên Hà nội}
+\date{7/5/2006}
+\begin{document}
+
+\frame{\maketitle}
+
+\begin{frame}
+  \frametitle{1. Lấy và cài đặt gói lệnh Beamer}
+  \begin{itemize}
+  \item\textcolor[rgb]{1.0,0.0,0.50}{ Lấy gói lệnh từ trang web:\\
+  http://latex-beamer.sourceforge.net}
+    \pause
+  \item\textcolor[rgb]{1.0,0.0,0.50}{ Mở gói lệnh latex-beamer-3.06.orig.tar vào thư mục
+   C:$\backslash$texmf$\backslash$tex$\backslash$latex$\backslash$latex-beamer-3.06}
+  \pause
+  \item Gắn vào môi trường MikTeX bằng cách chạy chương trình:
+ Start$\rightarrow$Programs $\rightarrow$ MikTeX $\rightarrow$ MikTeX options $\rightarrow$ refresh
+\pause
+  \item Mở tệp vdbeamer.tex và biên dich:\\
+ - Biên dịch theo LaTeX không có lỗi là cài đặt hoàn chỉnh.\\
+ - Nếu có lỗi thì có lẽ thiếu gói lệnh: pgf-1.0.orig.tar và latex-xcolor-2.0.orig.tar, bạn phải tìm và cài lấy.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}  
+\frametitle{2. Cấu trúc lớp Beamer}
+  \pause
+  \begin{itemize}
+  \item Phần đầu phải có\\
+$\backslash$documentclass$\{$beamer$\}$\\
+$\backslash$usetheme$\{$split$\}$ mẫu màn hình có thể thay split bằng warsaw, bars, boxes, classic, lined, plain, shadow, sidebar, sidebar-tab, tree, tree-bars\\
+$\backslash$setbeamercovered$\{$transparent$\}$\\
+$\backslash$usepackage[english]$\{$babel$\}$ Bộ chữ cái tiếng Anh.\\
+$\backslash$usepackage[vntime]$\{$vntex$\}$ Cài dấu tiếng Việt.
+ \pause
+ \item Trang đầu tiên của nội dung cần chiếu:\\
+ $\backslash$title$\{$Dùng Beamer như thế nào$\}$\\
+$\backslash$author$\{$Nguyễn Hữu Điển$\}$\\
+$\backslash$institute[ĐHKHTN Hà Nội]$\{$\\
+  Khoa Toán - Cơ - Tin học\\
+  Đại học Khoa học Tự nhiên Hà nội$\}$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}  
+\frametitle{3. Một trang màn hình}
+\pause
+\begin{itemize}
+\item Trang đầu tiên sau môi trường {\bf document}\\
+$\backslash$frame$\{$ $\backslash$maketitle$\}$
+\pause
+\item Trang khác gồm các lệnh\\
+$\backslash$begin$\{$frame$\}$\\  
+$\backslash$frametitle$\{$ tiêu đề trang $\}$\\
+$\backslash$pause\\
+$\backslash$begin$\{$itemize$\}$\\
+$\backslash$item ...\\
+$\backslash$item ...\\
+ $\backslash$end$\{$itemize$\}$\\
+ $\backslash$end$\{$frame$\}$  \\
+ Chú ý: sau mỗi item hoặc itemize có lệnh  $\backslash$pause
+\pause 
+ \item Mỗi trang lặp lại cấu trúc này.
+  \end{itemize}
+\end{frame}
+ 
+\begin{frame}  
+\frametitle{4. Soạn thảo và biên dịch}
+\pause
+\begin{itemize}
+\item Các lệnh của \LaTeX{} soạn thảo bình thường.
+\pause
+\item Các lệnh và môi trường toán cũng không thay đổi gì, ví dụ:
+\begin{equation}
+f(x)=\begin{cases}
+1, \mbox{ nếu }x\ge 0,\\
+0, \mbox{ngược lại.}
+\end{cases}
+\end{equation}
+\pause 
+ \item Biên dịch từ tệp TeX sang tệp PDF:\\
+ - Trong winshell nhấn vào nút PdfTeX  để dịch từ chương trình pdflatex:\\
+ Có thể phải đặt lại đường dẫn đến chuopwng trình này như\\
+ Option $\rightarrow$ Program call $\rightarrow$ PDFLatex\\
+ gõ vào ô exe-File: pdflatex và ô cmd-line: \%s.tex
+ \pause 
+ \item Chạy chương trình bằng acrobat reader 7.0 là tốt nhất. Bạn cũng có thể cài chương trình này vào trong Winshell ở nút: PDF. Cách làm tương tự phần trên.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}  
+\frametitle{Kết thúc}
+\begin{center}
+Chúc mọi người may mắn!
+\end{center}
+\end{frame} 
+\end{document}
